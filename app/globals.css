@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+/* Fresh Ducts Design Tokens */
+:root {
+  /* Brand Colors */
+  --navy-900: #020D1D;
+  --navy-800: #0B2447;
+  --navy-700: #143263;
+  --yellow-500: #FAC515;
+  --yellow-600: #E0AE00;
+
+  /* Neutrals */
+  --ink: #0A0F1A;
+  --slate-600: #475569;
+  --slate-400: #94A3B8;
+  --line: #E6E9EF;
+  --surface: #F7F8FA;
+  --paper: #FFFFFF;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(2, 13, 29, 0.06);
+  --shadow-md: 0 1px 2px rgba(2, 13, 29, 0.06), 0 8px 24px rgba(2, 13, 29, 0.06);
+  --shadow-lg: 0 1px 3px rgba(2, 13, 29, 0.08), 0 12px 32px rgba(2, 13, 29, 0.08);
+}
+
+@theme inline {
+  /* Brand Colors */
+  --color-navy-900: var(--navy-900);
+  --color-navy-800: var(--navy-800);
+  --color-navy-700: var(--navy-700);
+  --color-yellow-500: var(--yellow-500);
+  --color-yellow-600: var(--yellow-600);
+
+  /* Neutrals */
+  --color-ink: var(--ink);
+  --color-slate-600: var(--slate-600);
+  --color-slate-400: var(--slate-400);
+  --color-line: var(--line);
+  --color-surface: var(--surface);
+  --color-paper: var(--paper);
+
+  /* Fonts */
+  --font-display: var(--font-fraunces);
+  --font-body: var(--font-hanken);
+
+  /* Shadows */
+  --shadow-sm: var(--shadow-sm);
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-full: 999px;
+
+  /* Font Sizes (fluid) */
+  --font-size-display: clamp(2.75rem, 6vw, 4.5rem);
+  --font-size-h2: clamp(2rem, 4vw, 3rem);
+  --font-size-h3: 1.5rem;
+  --font-size-body-lg: 1.25rem;
+  --font-size-body: 1.0625rem;
+  --font-size-small: 0.875rem;
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body), system-ui, sans-serif;
+  font-size: var(--font-size-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display), Georgia, serif;
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+/* Focus styles for accessibility */
+:focus-visible {
+  outline: 2px solid var(--yellow-500);
+  outline-offset: 2px;
+}
+
+/* Selection */
+::selection {
+  background: var(--yellow-500);
+  color: var(--navy-900);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

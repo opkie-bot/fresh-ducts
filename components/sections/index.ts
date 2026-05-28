@@ -1,0 +1,10 @@
+export { Hero } from "./Hero";
+export { Services } from "./Services";
+export { VideoInspection } from "./VideoInspection";
+export { WhyChooseUs } from "./WhyChooseUs";
+export { Process } from "./Process";
+export { Reviews } from "./Reviews";
+export { ServiceArea } from "./ServiceArea";
+export { FAQ } from "./FAQ";
+export { WhatToExpect } from "./WhatToExpect";
+export { CTABand } from "./CTABand";
