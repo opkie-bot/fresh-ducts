@@ -7,7 +7,6 @@ import {
   Reviews,
   ServiceArea,
   FAQ,
-  WhatToExpect,
   CTABand,
 } from "@/components/sections";
 import { LocalBusinessSchema, FAQSchema } from "@/lib/schema";
@@ -15,11 +14,9 @@ import { LocalBusinessSchema, FAQSchema } from "@/lib/schema";
 export default function HomePage() {
   return (
     <>
-      {/* JSON-LD Structured Data */}
       <LocalBusinessSchema />
       <FAQSchema />
 
-      {/* Page Sections */}
       <Hero />
       <Services />
       <VideoInspection />
@@ -28,7 +25,6 @@ export default function HomePage() {
       <Reviews />
       <ServiceArea />
       <FAQ />
-      <WhatToExpect />
       <CTABand />
     </>
   );
