@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const PHONE_NUMBER = "(801) 395-2822";
 const PHONE_HREF = "tel:+18013952822";
@@ -10,7 +11,15 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Contact */}
           <div>
-            <p className="font-display text-lg font-semibold mb-4">Fresh Ducts</p>
+            <Link href="/" className="inline-block mb-4">
+              <Image
+                src="/logo.webp"
+                alt="Fresh Ducts"
+                width={140}
+                height={50}
+                className="h-10 w-auto"
+              />
+            </Link>
             <address className="not-italic text-sm text-white/60 space-y-1">
               <p>874 W 26th St #101</p>
               <p>Ogden, UT 84401</p>
