@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { CTABand } from "@/components/sections/CTABand";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Contact Us | Fresh Ducts",
@@ -91,101 +91,31 @@ export default function ContactPage() {
             </div>
 
             {/* Contact Form */}
-            <div className="bg-surface rounded-xl p-8">
+            <div className="bg-surface rounded-xl p-4 sm:p-8">
               <h2 className="font-display text-2xl font-semibold text-ink mb-6">
                 Request Free Inspection
               </h2>
 
-              <form className="space-y-6">
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <div>
-                    <label htmlFor="firstName" className="block text-sm font-medium text-ink mb-2">
-                      First Name
-                    </label>
-                    <input
-                      type="text"
-                      id="firstName"
-                      name="firstName"
-                      className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent outline-none transition-shadow"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="lastName" className="block text-sm font-medium text-ink mb-2">
-                      Last Name
-                    </label>
-                    <input
-                      type="text"
-                      id="lastName"
-                      name="lastName"
-                      className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent outline-none transition-shadow"
-                      required
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-ink mb-2">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent outline-none transition-shadow"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-ink mb-2">
-                    Phone
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent outline-none transition-shadow"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="service" className="block text-sm font-medium text-ink mb-2">
-                    Service Interested In
-                  </label>
-                  <select
-                    id="service"
-                    name="service"
-                    className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent outline-none transition-shadow"
-                  >
-                    <option value="inspection">Free Video Inspection</option>
-                    <option value="air-duct">Air Duct Cleaning</option>
-                    <option value="dryer-vent">Dryer Vent Cleaning</option>
-                    <option value="duct-sealing">Duct Sealing</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-ink mb-2">
-                    Message (optional)
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={4}
-                    className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent outline-none transition-shadow resize-none"
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full px-6 py-3 bg-yellow-500 text-navy-900 font-medium rounded-lg hover:bg-yellow-400 transition-colors"
-                >
-                  Request Free Inspection
-                </button>
-              </form>
+              <div className="min-h-[735px]">
+                <iframe
+                  src="https://link.opkie.com/widget/form/CTcEXXHIhHlS0lpGQyCu"
+                  style={{ width: "100%", height: "735px", border: "none", borderRadius: "3px" }}
+                  id="inline-CTcEXXHIhHlS0lpGQyCu"
+                  data-layout="{'id':'INLINE'}"
+                  data-trigger-type="alwaysShow"
+                  data-trigger-value=""
+                  data-activation-type="alwaysActivated"
+                  data-activation-value=""
+                  data-deactivation-type="neverDeactivate"
+                  data-deactivation-value=""
+                  data-form-name="A 02 - Website Form"
+                  data-height="735"
+                  data-layout-iframe-id="inline-CTcEXXHIhHlS0lpGQyCu"
+                  data-form-id="CTcEXXHIhHlS0lpGQyCu"
+                  title="Fresh Ducts Contact Form"
+                />
+              </div>
+              <Script src="https://link.opkie.com/js/form_embed.js" strategy="lazyOnload" />
             </div>
           </div>
         </div>
