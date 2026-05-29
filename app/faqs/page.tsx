@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { FAQ } from "@/components/sections/FAQ";
 import { CTABand } from "@/components/sections/CTABand";
+import { ImageCarousel } from "@/components/sections/ImageCarousel";
 
 export const metadata: Metadata = {
   title: "FAQs | Fresh Ducts",
@@ -26,6 +27,7 @@ export default function FAQsPage() {
       </section>
 
       <FAQ />
+      <ImageCarousel />
       <CTABand />
     </main>
   );
