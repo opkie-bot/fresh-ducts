@@ -51,12 +51,12 @@ export function WhyChooseUs() {
                 className="object-cover"
               />
             </div>
-            {/* Floating accent */}
-            <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-yellow-500/20 rounded-xl -z-10" />
-            {/* Caption card */}
-            <div className="absolute -bottom-6 -left-6 bg-white rounded-xl p-4 shadow-xl max-w-[200px]">
-              <p className="font-semibold text-ink text-sm">Real results</p>
-              <p className="text-slate-600 text-xs">See the lint and debris we remove from every job</p>
+            {/* Floating accent - hidden on mobile */}
+            <div className="hidden sm:block absolute -bottom-4 -right-4 w-32 h-32 bg-yellow-500/20 rounded-xl -z-10" />
+            {/* Caption card - repositioned on mobile */}
+            <div className="absolute bottom-4 left-4 sm:-bottom-6 sm:-left-6 bg-white rounded-xl p-3 sm:p-4 shadow-xl max-w-[180px] sm:max-w-[200px]">
+              <p className="font-semibold text-ink text-xs sm:text-sm">Real results</p>
+              <p className="text-slate-600 text-[10px] sm:text-xs">See the lint and debris we remove from every job</p>
             </div>
           </motion.div>
 
@@ -74,18 +74,18 @@ export function WhyChooseUs() {
             <p className="text-slate-600 text-lg mb-8">
               Family-owned and operated since 1993. We treat every home like it&apos;s our own, with honest assessments and quality work you can see.
             </p>
-            <div className="grid grid-cols-3 gap-4">
-              <div className="text-center p-4 bg-white rounded-xl shadow-sm">
-                <p className="text-2xl font-bold text-navy-900">30+</p>
-                <p className="text-sm text-slate-600">Years</p>
+            <div className="grid grid-cols-3 gap-2 sm:gap-4">
+              <div className="text-center p-3 sm:p-4 bg-white rounded-xl shadow-sm">
+                <p className="text-xl sm:text-2xl font-bold text-navy-900">30+</p>
+                <p className="text-xs sm:text-sm text-slate-600">Years</p>
               </div>
-              <div className="text-center p-4 bg-white rounded-xl shadow-sm">
-                <p className="text-2xl font-bold text-navy-900">4.9</p>
-                <p className="text-sm text-slate-600">Rating</p>
+              <div className="text-center p-3 sm:p-4 bg-white rounded-xl shadow-sm">
+                <p className="text-xl sm:text-2xl font-bold text-navy-900">4.9</p>
+                <p className="text-xs sm:text-sm text-slate-600">Rating</p>
               </div>
-              <div className="text-center p-4 bg-white rounded-xl shadow-sm">
-                <p className="text-2xl font-bold text-navy-900">A+</p>
-                <p className="text-sm text-slate-600">BBB</p>
+              <div className="text-center p-3 sm:p-4 bg-white rounded-xl shadow-sm">
+                <p className="text-xl sm:text-2xl font-bold text-navy-900">A+</p>
+                <p className="text-xs sm:text-sm text-slate-600">BBB</p>
               </div>
             </div>
           </motion.div>

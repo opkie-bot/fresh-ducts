@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
 
@@ -7,11 +8,21 @@ const PHONE_NUMBER = "(801) 395-2822";
 const PHONE_HREF = "tel:+18013952822";
 
 export function Hero() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (video) {
+      video.currentTime = 2;
+    }
+  }, []);
+
   return (
-    <section className="relative bg-navy-900 overflow-hidden min-h-[90vh] flex items-center">
+    <section className="relative bg-navy-900 overflow-hidden min-h-[85vh] sm:min-h-[90vh] flex items-center">
       {/* Background video */}
       <div className="absolute inset-0">
         <video
+          ref={videoRef}
           autoPlay
           muted
           loop

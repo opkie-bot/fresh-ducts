@@ -72,18 +72,18 @@ export function BeforeAfter() {
         </motion.div>
 
         {/* Comparison selector */}
-        <div className="flex justify-center gap-4 mb-8">
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-8">
           {comparisons.map((comp, index) => (
             <button
               key={comp.id}
               onClick={() => setActiveComparison(index)}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+              className={`px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-medium transition-colors ${
                 activeComparison === index
                   ? "bg-yellow-500 text-navy-900"
                   : "bg-white/10 text-white/70 hover:bg-white/20"
               }`}
             >
-              Example {index + 1}
+              {index + 1}
             </button>
           ))}
         </div>
@@ -108,13 +108,13 @@ export function BeforeAfter() {
                 />
                 {/* Labels overlay */}
                 <div className="absolute inset-0 flex">
-                  <div className="w-1/2 flex items-end p-6">
-                    <span className="bg-red-500/90 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium">
+                  <div className="w-1/2 flex items-end p-3 sm:p-6">
+                    <span className="bg-red-500/90 backdrop-blur-sm text-white px-3 sm:px-4 py-1 sm:py-2 rounded-full text-xs sm:text-sm font-medium">
                       Before
                     </span>
                   </div>
-                  <div className="w-1/2 flex items-end justify-end p-6">
-                    <span className="bg-green-500 text-white px-4 py-2 rounded-full text-sm font-medium">
+                  <div className="w-1/2 flex items-end justify-end p-3 sm:p-6">
+                    <span className="bg-green-500 text-white px-3 sm:px-4 py-1 sm:py-2 rounded-full text-xs sm:text-sm font-medium">
                       After
                     </span>
                   </div>
@@ -195,18 +195,18 @@ export function BeforeAfter() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-center mt-12"
         >
-          <div className="inline-flex flex-wrap justify-center gap-4 mb-8">
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl px-6 py-4 border border-white/10">
-              <p className="text-yellow-500 font-bold text-xl">Dust & Debris</p>
-              <p className="text-white/60 text-sm">Completely removed</p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 mb-8 max-w-2xl mx-auto">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl px-4 sm:px-6 py-3 sm:py-4 border border-white/10 text-center">
+              <p className="text-yellow-500 font-bold text-lg sm:text-xl">Dust & Debris</p>
+              <p className="text-white/60 text-xs sm:text-sm">Completely removed</p>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl px-6 py-4 border border-white/10">
-              <p className="text-yellow-500 font-bold text-xl">Air Quality</p>
-              <p className="text-white/60 text-sm">Significantly improved</p>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl px-4 sm:px-6 py-3 sm:py-4 border border-white/10 text-center">
+              <p className="text-yellow-500 font-bold text-lg sm:text-xl">Air Quality</p>
+              <p className="text-white/60 text-xs sm:text-sm">Significantly improved</p>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl px-6 py-4 border border-white/10">
-              <p className="text-yellow-500 font-bold text-xl">HVAC Efficiency</p>
-              <p className="text-white/60 text-sm">Better airflow</p>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl px-4 sm:px-6 py-3 sm:py-4 border border-white/10 text-center">
+              <p className="text-yellow-500 font-bold text-lg sm:text-xl">HVAC Efficiency</p>
+              <p className="text-white/60 text-xs sm:text-sm">Better airflow</p>
             </div>
           </div>
 

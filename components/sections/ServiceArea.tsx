@@ -43,8 +43,8 @@ export function ServiceArea() {
                 Based in Ogden, serving all of Northern Utah. We drive to you.
               </p>
 
-              {/* Interactive Map */}
-              <div className="aspect-[4/3] max-w-[320px] bg-navy-800 rounded-xl border border-white/10 overflow-hidden">
+              {/* Interactive Map - hidden on mobile, shown on lg+ */}
+              <div className="hidden lg:block aspect-[4/3] max-w-[320px] bg-navy-800 rounded-xl border border-white/10 overflow-hidden">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d387050.5624754793!2d-111.97383!3d41.0534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1699900000000!5m2!1sen!2sus"
                   width="100%"
@@ -57,7 +57,7 @@ export function ServiceArea() {
                   className="grayscale hover:grayscale-0 transition-all duration-300"
                 />
               </div>
-              <p className="text-white/50 text-xs mt-3">
+              <p className="hidden lg:block text-white/50 text-xs mt-3">
                 Serving Weber, Davis, Salt Lake & Cache counties
               </p>
             </motion.div>
@@ -65,7 +65,7 @@ export function ServiceArea() {
 
           {/* Right column - area cards */}
           <div className="lg:col-span-8">
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 gap-3 sm:gap-6">
               {areas.map((area, index) => (
                 <motion.div
                   key={area.county}
@@ -73,10 +73,10 @@ export function ServiceArea() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="bg-white/5 rounded-xl p-6 border border-white/10"
+                  className="bg-white/5 rounded-xl p-4 sm:p-6 border border-white/10"
                 >
-                  <h3 className="font-semibold text-white mb-4">{area.county}</h3>
-                  <ul className="space-y-2 text-sm">
+                  <h3 className="font-semibold text-white text-sm sm:text-base mb-3 sm:mb-4">{area.county}</h3>
+                  <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm">
                     {area.cities.map((city) => (
                       <li key={city}>
                         <Link
