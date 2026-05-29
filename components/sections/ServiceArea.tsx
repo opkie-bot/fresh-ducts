@@ -43,13 +43,23 @@ export function ServiceArea() {
                 Based in Ogden, serving all of Northern Utah. We drive to you.
               </p>
 
-              {/* Map placeholder */}
-              <div className="aspect-square max-w-[280px] bg-navy-800 rounded-xl border border-white/10 flex items-center justify-center">
-                <div className="text-center">
-                  <p className="text-4xl font-bold text-yellow-500 mb-2">4</p>
-                  <p className="text-white/60 text-sm">Counties served</p>
-                </div>
+              {/* Interactive Map */}
+              <div className="aspect-[4/3] max-w-[320px] bg-navy-800 rounded-xl border border-white/10 overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d387050.5624754793!2d-111.97383!3d41.0534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1699900000000!5m2!1sen!2sus"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Fresh Ducts service area map - Northern Utah"
+                  className="grayscale hover:grayscale-0 transition-all duration-300"
+                />
               </div>
+              <p className="text-white/50 text-xs mt-3">
+                Serving Weber, Davis, Salt Lake & Cache counties
+              </p>
             </motion.div>
           </div>
 
