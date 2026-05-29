@@ -27,11 +27,19 @@ export default function DuctSealingPage() {
             </div>
             <div className="relative aspect-video rounded-xl overflow-hidden border border-white/10">
               <Image
-                src="/before-after-3.jpg"
-                alt="Duct sealing results"
+                src="/before-after.jpg"
+                alt="Before and after duct sealing comparison"
                 fill
                 className="object-cover"
               />
+              <div className="absolute inset-0 flex">
+                <div className="w-1/2 flex items-end p-4">
+                  <span className="bg-red-500/90 text-white px-3 py-1 rounded-full text-sm font-medium">Before</span>
+                </div>
+                <div className="w-1/2 flex items-end justify-end p-4">
+                  <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">After</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -27,19 +27,11 @@ export default function AirDuctCleaningPage() {
             </div>
             <div className="relative aspect-video rounded-xl overflow-hidden border border-white/10">
               <Image
-                src="/before-after.jpg"
-                alt="Before and after air duct cleaning comparison"
+                src="/company-trucks.jpg"
+                alt="Fresh Ducts professional truck-mounted cleaning equipment"
                 fill
                 className="object-cover"
               />
-              <div className="absolute inset-0 flex">
-                <div className="w-1/2 flex items-end p-4">
-                  <span className="bg-red-500/90 text-white px-3 py-1 rounded-full text-sm font-medium">Before</span>
-                </div>
-                <div className="w-1/2 flex items-end justify-end p-4">
-                  <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">After</span>
-                </div>
-              </div>
             </div>
           </div>
         </div>
