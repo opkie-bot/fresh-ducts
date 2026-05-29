@@ -40,8 +40,8 @@
   --color-paper: var(--paper);
 
   /* Fonts */
-  --font-display: var(--font-roboto-slab);
-  --font-body: var(--font-roboto);
+  --font-display: var(--font-montserrat);
+  --font-body: var(--font-lato);
 
   /* Shadows */
   --shadow-sm: var(--shadow-sm);
