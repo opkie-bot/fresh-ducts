@@ -32,11 +32,6 @@ export default function AirDuctInspectionsPage() {
                 fill
                 className="object-cover"
               />
-              <div className="absolute bottom-4 left-4">
-                <span className="bg-navy-900/90 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-medium">
-                  Actual inspection footage
-                </span>
-              </div>
             </div>
           </div>
         </div>
