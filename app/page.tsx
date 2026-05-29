@@ -5,6 +5,7 @@ import {
   BeforeAfter,
   WhyChooseUs,
   Process,
+  TruckShowcase,
   Reviews,
   ServiceArea,
   FAQ,
@@ -24,6 +25,7 @@ export default function HomePage() {
       <BeforeAfter />
       <WhyChooseUs />
       <Process />
+      <TruckShowcase />
       <Reviews />
       <ServiceArea />
       <FAQ />

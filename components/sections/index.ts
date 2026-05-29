@@ -4,6 +4,7 @@ export { VideoInspection } from "./VideoInspection";
 export { BeforeAfter } from "./BeforeAfter";
 export { WhyChooseUs } from "./WhyChooseUs";
 export { Process } from "./Process";
+export { TruckShowcase } from "./TruckShowcase";
 export { Reviews } from "./Reviews";
 export { ServiceArea } from "./ServiceArea";
 export { FAQ } from "./FAQ";
