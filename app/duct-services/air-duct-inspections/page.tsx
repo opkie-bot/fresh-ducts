@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { CTABand } from "@/components/sections/CTABand";
 
@@ -24,8 +25,18 @@ export default function AirDuctInspectionsPage() {
               </p>
               <Button href="/contact-us">Schedule Free Inspection</Button>
             </div>
-            <div className="aspect-video bg-navy-800 rounded-xl border border-white/10 flex items-center justify-center">
-              <p className="text-white/30">[Photo: Technician with inspection camera]</p>
+            <div className="relative aspect-video rounded-xl overflow-hidden border border-white/10">
+              <Image
+                src="/before-duct.webp"
+                alt="Inside view of dirty air duct during inspection"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute bottom-4 left-4">
+                <span className="bg-navy-900/90 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-medium">
+                  Actual inspection footage
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -87,6 +98,48 @@ export default function AirDuctInspectionsPage() {
               </ul>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* What We Find Section */}
+      <section className="py-24 lg:py-32 bg-navy-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <p className="text-yellow-500 font-medium mb-3">What we find</p>
+            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
+              This is what&apos;s hiding in your ducts
+            </h2>
+            <p className="text-white/70 max-w-2xl mx-auto">
+              Our camera inspections reveal what you can&apos;t see—years of dust, debris, and buildup that affects your air quality.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-white/10">
+              <Image
+                src="/before-duct.webp"
+                alt="Dirty air duct with debris buildup"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute bottom-4 left-4">
+                <span className="bg-red-500/90 text-white px-3 py-1 rounded-full text-sm font-medium">Before cleaning</span>
+              </div>
+            </div>
+            <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-white/10">
+              <Image
+                src="/after-duct.webp"
+                alt="Clean air duct after professional cleaning"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute bottom-4 left-4">
+                <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">After cleaning</span>
+              </div>
+            </div>
+          </div>
+          <p className="text-center text-white/50 text-sm mt-6">
+            These are actual before and after photos from our inspections
+          </p>
         </div>
       </section>
 

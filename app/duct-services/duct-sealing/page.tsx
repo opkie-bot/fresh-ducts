@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { CTABand } from "@/components/sections/CTABand";
 
@@ -24,8 +25,13 @@ export default function DuctSealingPage() {
               </p>
               <Button href="/contact-us">Get Free Assessment</Button>
             </div>
-            <div className="aspect-video bg-navy-800 rounded-xl border border-white/10 flex items-center justify-center">
-              <p className="text-white/30">[Photo: Duct sealing process]</p>
+            <div className="relative aspect-video rounded-xl overflow-hidden border border-white/10">
+              <Image
+                src="/before-after-3.jpg"
+                alt="Duct sealing results"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </div>
@@ -105,6 +111,51 @@ export default function DuctSealingPage() {
                   </div>
                 </li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Results Section */}
+      <section className="py-24 lg:py-32 bg-navy-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-white/10">
+              <Image
+                src="/before-after-4.jpg"
+                alt="Duct condition before and after sealing"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div>
+              <p className="text-yellow-500 font-medium mb-3">Proven results</p>
+              <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
+                Clean ducts, sealed tight
+              </h2>
+              <p className="text-white/70 mb-6">
+                We combine thorough duct cleaning with our Duct Armor sealing process for maximum efficiency. Your ducts will be cleaner and more airtight than ever before.
+              </p>
+              <div className="bg-white/5 rounded-lg p-5 border border-white/10">
+                <ul className="space-y-3">
+                  <li className="flex items-center gap-3 text-white/80">
+                    <span className="w-5 h-5 rounded-full bg-yellow-500/20 flex items-center justify-center text-yellow-500 text-xs">✓</span>
+                    Improved HVAC efficiency
+                  </li>
+                  <li className="flex items-center gap-3 text-white/80">
+                    <span className="w-5 h-5 rounded-full bg-yellow-500/20 flex items-center justify-center text-yellow-500 text-xs">✓</span>
+                    Better temperature control
+                  </li>
+                  <li className="flex items-center gap-3 text-white/80">
+                    <span className="w-5 h-5 rounded-full bg-yellow-500/20 flex items-center justify-center text-yellow-500 text-xs">✓</span>
+                    Lower energy bills
+                  </li>
+                  <li className="flex items-center gap-3 text-white/80">
+                    <span className="w-5 h-5 rounded-full bg-yellow-500/20 flex items-center justify-center text-yellow-500 text-xs">✓</span>
+                    Cleaner indoor air
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

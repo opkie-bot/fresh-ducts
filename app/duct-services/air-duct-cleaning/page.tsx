@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { CTABand } from "@/components/sections/CTABand";
 
@@ -24,8 +25,21 @@ export default function AirDuctCleaningPage() {
               </p>
               <Button href="/contact-us">Get Free Inspection</Button>
             </div>
-            <div className="aspect-video bg-navy-800 rounded-xl border border-white/10 flex items-center justify-center">
-              <p className="text-white/30">[Photo: Truck-mounted equipment]</p>
+            <div className="relative aspect-video rounded-xl overflow-hidden border border-white/10">
+              <Image
+                src="/before-after.jpg"
+                alt="Before and after air duct cleaning comparison"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 flex">
+                <div className="w-1/2 flex items-end p-4">
+                  <span className="bg-red-500/90 text-white px-3 py-1 rounded-full text-sm font-medium">Before</span>
+                </div>
+                <div className="w-1/2 flex items-end justify-end p-4">
+                  <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">After</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -85,6 +99,39 @@ export default function AirDuctCleaningPage() {
                   </div>
                 </li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Before/After Gallery */}
+      <section className="py-24 lg:py-32 bg-navy-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <p className="text-yellow-500 font-medium mb-3">Real results</p>
+            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
+              See the difference
+            </h2>
+            <p className="text-white/70 max-w-2xl mx-auto">
+              These are actual results from our duct cleaning jobs in Northern Utah homes.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-white/10">
+              <Image
+                src="/before-after-3.jpg"
+                alt="Duct cleaning before and after"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-white/10">
+              <Image
+                src="/before-after-4.jpg"
+                alt="Air duct cleaning results"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </div>

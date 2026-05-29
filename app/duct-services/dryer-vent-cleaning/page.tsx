@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { CTABand } from "@/components/sections/CTABand";
 
@@ -24,8 +25,13 @@ export default function DryerVentCleaningPage() {
               </p>
               <Button href="/contact-us">Schedule Service</Button>
             </div>
-            <div className="aspect-video bg-navy-800 rounded-xl border border-white/10 flex items-center justify-center">
-              <p className="text-white/30">[Photo: Dryer vent cleaning]</p>
+            <div className="relative aspect-video rounded-xl overflow-hidden border border-white/10">
+              <Image
+                src="/owner-cleaning.jpg"
+                alt="Fresh Ducts technician cleaning a dryer vent"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </div>
@@ -109,6 +115,45 @@ export default function DryerVentCleaningPage() {
                   We recommend dryer vent cleaning annually, or more frequently if you do a lot of laundry.
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Before/After Section */}
+      <section className="py-24 lg:py-32 bg-navy-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <p className="text-yellow-500 font-medium mb-3">Real results</p>
+              <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
+                See what we remove
+              </h2>
+              <p className="text-white/70 mb-6">
+                Years of lint buildup can accumulate in your dryer vent, creating a serious fire hazard. Our thorough cleaning removes all debris, restoring safe and efficient operation.
+              </p>
+              <ul className="space-y-3">
+                <li className="flex items-center gap-3 text-white/80">
+                  <span className="w-5 h-5 rounded-full bg-yellow-500/20 flex items-center justify-center text-yellow-500 text-xs">✓</span>
+                  Faster drying times
+                </li>
+                <li className="flex items-center gap-3 text-white/80">
+                  <span className="w-5 h-5 rounded-full bg-yellow-500/20 flex items-center justify-center text-yellow-500 text-xs">✓</span>
+                  Reduced fire risk
+                </li>
+                <li className="flex items-center gap-3 text-white/80">
+                  <span className="w-5 h-5 rounded-full bg-yellow-500/20 flex items-center justify-center text-yellow-500 text-xs">✓</span>
+                  Lower energy bills
+                </li>
+              </ul>
+            </div>
+            <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-white/10">
+              <Image
+                src="/before-after-2.jpg"
+                alt="Dryer vent before and after cleaning"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </div>
