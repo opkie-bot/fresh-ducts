@@ -21,6 +21,9 @@ export const metadata: Metadata = {
   title: "Fresh Ducts | Utah's Trusted Duct Cleaning Service Since 1993",
   description:
     "Professional air duct cleaning in Utah. Free video inspection shows exactly what's in your ducts. Serving Davis, Weber, Salt Lake & Cache counties. Call (801) 395-2822.",
+  icons: {
+    icon: "/favicon.webp",
+  },
   keywords: [
     "duct cleaning Utah",
     "air duct cleaning",
