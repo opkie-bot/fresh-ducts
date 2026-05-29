@@ -7,5 +7,5 @@ export const metadata: Metadata = {
 };
 
 export default function ClearfieldPage() {
-  return <ServiceAreaTemplate city="Clearfield" county="Davis County" />;
+  return <ServiceAreaTemplate city="Clearfield" county="Davis County" mapQuery="Clearfield, Utah" />;
 }

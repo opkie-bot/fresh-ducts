@@ -7,5 +7,5 @@ export const metadata: Metadata = {
 };
 
 export default function FarmingtonPage() {
-  return <ServiceAreaTemplate city="Farmington" county="Davis County" />;
+  return <ServiceAreaTemplate city="Farmington" county="Davis County" mapQuery="Farmington, Utah" />;
 }

@@ -7,5 +7,5 @@ export const metadata: Metadata = {
 };
 
 export default function NorthOgdenPage() {
-  return <ServiceAreaTemplate city="North Ogden" county="Weber County" />;
+  return <ServiceAreaTemplate city="North Ogden" county="Weber County" mapQuery="North Ogden, Utah" />;
 }

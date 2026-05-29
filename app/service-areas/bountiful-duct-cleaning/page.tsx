@@ -7,5 +7,5 @@ export const metadata: Metadata = {
 };
 
 export default function BountifulPage() {
-  return <ServiceAreaTemplate city="Bountiful" county="Davis County" />;
+  return <ServiceAreaTemplate city="Bountiful" county="Davis County" mapQuery="Bountiful, Utah" />;
 }

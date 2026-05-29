@@ -7,5 +7,5 @@ export const metadata: Metadata = {
 };
 
 export default function SaltLakeCityPage() {
-  return <ServiceAreaTemplate city="Salt Lake City" county="Salt Lake County" />;
+  return <ServiceAreaTemplate city="Salt Lake City" county="Salt Lake County" mapQuery="Salt Lake City, Utah" />;
 }

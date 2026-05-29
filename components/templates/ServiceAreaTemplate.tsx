@@ -7,9 +7,10 @@ import { CTABand } from "@/components/sections/CTABand";
 interface ServiceAreaTemplateProps {
   city: string;
   county: string;
+  mapQuery: string;
 }
 
-export function ServiceAreaTemplate({ city, county }: ServiceAreaTemplateProps) {
+export function ServiceAreaTemplate({ city, county, mapQuery }: ServiceAreaTemplateProps) {
   return (
     <main className="pt-16">
       {/* Hero */}
@@ -44,8 +45,17 @@ export function ServiceAreaTemplate({ city, county }: ServiceAreaTemplateProps) 
               transition={{ duration: 0.5, delay: 0.2 }}
               className="hidden lg:block"
             >
-              <div className="aspect-video bg-navy-800 rounded-xl border border-white/10 flex items-center justify-center">
-                <p className="text-white/30">[Photo: {city} service area]</p>
+              <div className="aspect-video bg-navy-800 rounded-xl border border-white/10 overflow-hidden">
+                <iframe
+                  src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=${encodeURIComponent(mapQuery)}&zoom=12`}
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title={`Map of ${city}, Utah`}
+                />
               </div>
             </motion.div>
           </div>

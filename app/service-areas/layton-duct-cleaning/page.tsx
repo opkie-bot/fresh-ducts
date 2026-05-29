@@ -7,5 +7,5 @@ export const metadata: Metadata = {
 };
 
 export default function LaytonPage() {
-  return <ServiceAreaTemplate city="Layton" county="Davis County" />;
+  return <ServiceAreaTemplate city="Layton" county="Davis County" mapQuery="Layton, Utah" />;
 }
