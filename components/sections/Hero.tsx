@@ -21,12 +21,11 @@ export function Hero() {
           <source src="/hero-video.mp4" type="video/mp4" />
         </video>
         {/* Overlay for text readability */}
-        <div className="absolute inset-0 bg-navy-900/70" />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy-900/90 via-navy-900/50 to-transparent" />
+        <div className="absolute inset-0 bg-navy-900/60" />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
-        <div className="max-w-2xl">
+        <div className="max-w-3xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -52,7 +51,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg text-white/80 mb-8 max-w-md"
+            className="text-lg text-white/80 mb-8 max-w-lg mx-auto"
           >
             Professional duct cleaning for Utah homes and businesses. We show
             you what&apos;s inside your ducts before you decide.
@@ -62,7 +61,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex flex-col sm:flex-row gap-4 mb-10"
+            className="flex flex-col sm:flex-row gap-4 mb-10 justify-center"
           >
             <Button href="/contact-us" className="px-6 py-3">
               Get free inspection
@@ -79,13 +78,13 @@ export function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex flex-wrap gap-6"
+            className="flex flex-wrap gap-6 justify-center"
           >
             <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-lg px-4 py-3">
               <div className="w-10 h-10 rounded-full bg-yellow-500/20 flex items-center justify-center">
                 <span className="text-yellow-500 text-lg">★</span>
               </div>
-              <div>
+              <div className="text-left">
                 <p className="text-white font-semibold">4.9 Rating</p>
                 <p className="text-white/60 text-sm">309 Google reviews</p>
               </div>
@@ -94,7 +93,7 @@ export function Hero() {
               <div className="w-10 h-10 rounded-full bg-yellow-500/20 flex items-center justify-center">
                 <span className="text-yellow-500 text-lg">✓</span>
               </div>
-              <div>
+              <div className="text-left">
                 <p className="text-white font-semibold">BBB Accredited</p>
                 <p className="text-white/60 text-sm">A+ Rating</p>
               </div>

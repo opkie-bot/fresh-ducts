@@ -2,6 +2,7 @@ import {
   Hero,
   Services,
   VideoInspection,
+  BeforeAfter,
   WhyChooseUs,
   Process,
   Reviews,
@@ -20,6 +21,7 @@ export default function HomePage() {
       <Hero />
       <Services />
       <VideoInspection />
+      <BeforeAfter />
       <WhyChooseUs />
       <Process />
       <Reviews />
