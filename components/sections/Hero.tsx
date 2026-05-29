@@ -8,69 +8,97 @@ const PHONE_HREF = "tel:+18013952822";
 
 export function Hero() {
   return (
-    <section className="relative bg-navy-900 pt-32 pb-20 lg:pt-40 lg:pb-28">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative bg-navy-900 overflow-hidden min-h-[90vh] flex items-center">
+      {/* Background video */}
+      <div className="absolute inset-0">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full h-full object-cover"
+        >
+          <source src="/hero-video.mp4" type="video/mp4" />
+        </video>
+        {/* Overlay for text readability */}
+        <div className="absolute inset-0 bg-navy-900/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-900/90 via-navy-900/50 to-transparent" />
+      </div>
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
         <div className="max-w-2xl">
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
-            className="text-yellow-500 font-medium mb-4"
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
           >
-            Serving Northern Utah since 1993
-          </motion.p>
+            <p className="inline-block px-4 py-1.5 bg-yellow-500/20 text-yellow-500 text-sm font-medium rounded-full mb-6 backdrop-blur-sm">
+              Trusted since 1993
+            </p>
+          </motion.div>
 
           <motion.h1
-            initial={{ opacity: 0, y: 10 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-white leading-[1.1] mb-6"
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.1] mb-6"
           >
-            Utah&apos;s preferred duct cleaning.
+            Cleaner ducts.
+            <br />
+            <span className="text-yellow-500">Cleaner air.</span>
           </motion.h1>
 
           <motion.p
-            initial={{ opacity: 0, y: 10 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-lg text-white/70 mb-8 max-w-lg"
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-lg text-white/80 mb-8 max-w-md"
           >
-            We show you exactly what&apos;s inside your ducts with a free video
-            inspection. No obligation, no pressure—just honest answers.
+            Professional duct cleaning for Utah homes and businesses. We show
+            you what&apos;s inside your ducts before you decide.
           </motion.p>
 
           <motion.div
-            initial={{ opacity: 0, y: 10 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="flex flex-col sm:flex-row gap-3 mb-12"
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="flex flex-col sm:flex-row gap-4 mb-10"
           >
-            <Button href="/contact-us">Schedule free inspection</Button>
+            <Button href="/contact-us" className="px-6 py-3">
+              Get free inspection
+            </Button>
             <a
               href={PHONE_HREF}
-              className="inline-flex items-center justify-center gap-2 px-5 py-3 text-white/90 hover:text-white transition-colors font-medium"
+              className="inline-flex items-center justify-center px-6 py-3 border border-white/30 text-white rounded hover:bg-white/10 transition-colors backdrop-blur-sm"
             >
-              Or call {PHONE_NUMBER}
+              Call {PHONE_NUMBER}
             </a>
           </motion.div>
 
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            className="flex items-center gap-6 text-sm text-white/60"
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="flex flex-wrap gap-6"
           >
-            <div className="flex items-center gap-1.5">
-              <span className="text-yellow-500">★</span>
-              <span>
-                <span className="text-white font-medium">4.9</span> on Google
-                <span className="text-white/40"> · 309 reviews</span>
-              </span>
+            <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-lg px-4 py-3">
+              <div className="w-10 h-10 rounded-full bg-yellow-500/20 flex items-center justify-center">
+                <span className="text-yellow-500 text-lg">★</span>
+              </div>
+              <div>
+                <p className="text-white font-semibold">4.9 Rating</p>
+                <p className="text-white/60 text-sm">309 Google reviews</p>
+              </div>
             </div>
-            <span className="text-white/30">|</span>
-            <span>BBB Accredited</span>
-            <span className="text-white/30">|</span>
-            <span>As seen on KSL</span>
+            <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-lg px-4 py-3">
+              <div className="w-10 h-10 rounded-full bg-yellow-500/20 flex items-center justify-center">
+                <span className="text-yellow-500 text-lg">✓</span>
+              </div>
+              <div>
+                <p className="text-white font-semibold">BBB Accredited</p>
+                <p className="text-white/60 text-sm">A+ Rating</p>
+              </div>
+            </div>
           </motion.div>
         </div>
       </div>

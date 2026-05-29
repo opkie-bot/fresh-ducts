@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const faqs = [
   {
@@ -36,33 +37,62 @@ const faqs = [
 ];
 
 export function FAQ() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="py-20 lg:py-28 bg-surface">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="font-display text-3xl lg:text-4xl font-semibold text-ink mb-10">
-          Questions people ask
-        </h2>
+    <section className="py-24 lg:py-32 bg-surface">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-12 gap-12 lg:gap-16">
+          {/* Left column - header */}
+          <div className="lg:col-span-4">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="lg:sticky lg:top-32"
+            >
+              <p className="text-yellow-600 font-medium mb-3">FAQ</p>
+              <h2 className="font-display text-3xl lg:text-4xl font-semibold text-ink mb-4">
+                Questions people ask
+              </h2>
+              <p className="text-slate-600">
+                Can&apos;t find what you&apos;re looking for? Give us a call and we&apos;ll answer any questions you have.
+              </p>
+            </motion.div>
+          </div>
 
-        <div className="divide-y divide-line">
-          {faqs.map((faq, index) => (
-            <div key={index} className="py-5">
-              <button
-                onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full flex items-start justify-between text-left"
-                aria-expanded={openIndex === index}
-              >
-                <span className="font-medium text-ink pr-8">{faq.question}</span>
-                <span className="text-slate-400 text-xl leading-none flex-shrink-0">
-                  {openIndex === index ? "−" : "+"}
-                </span>
-              </button>
-              {openIndex === index && (
-                <p className="mt-3 text-slate-600 pr-8">{faq.answer}</p>
-              )}
+          {/* Right column - accordion */}
+          <div className="lg:col-span-8">
+            <div className="space-y-4">
+              {faqs.map((faq, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: index * 0.05 }}
+                  className="bg-white rounded-xl overflow-hidden shadow-sm"
+                >
+                  <button
+                    onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                    className="w-full flex items-center justify-between text-left p-6"
+                    aria-expanded={openIndex === index}
+                  >
+                    <span className="font-medium text-ink pr-8">{faq.question}</span>
+                    <span className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-colors ${openIndex === index ? 'bg-navy-900 text-white' : 'bg-surface text-slate-400'}`}>
+                      {openIndex === index ? "−" : "+"}
+                    </span>
+                  </button>
+                  {openIndex === index && (
+                    <div className="px-6 pb-6">
+                      <p className="text-slate-600 leading-relaxed">{faq.answer}</p>
+                    </div>
+                  )}
+                </motion.div>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </section>
