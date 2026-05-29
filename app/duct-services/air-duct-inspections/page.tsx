@@ -68,28 +68,44 @@ export default function AirDuctInspectionsPage() {
               </h2>
               <ul className="space-y-4">
                 <li className="flex gap-4">
-                  <span className="w-8 h-8 rounded-full bg-yellow-500/10 flex items-center justify-center text-yellow-600 flex-shrink-0">✓</span>
+                  <span className="w-8 h-8 rounded-full bg-yellow-500/10 flex items-center justify-center flex-shrink-0">
+                    <svg className="w-4 h-4 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </span>
                   <div>
                     <p className="font-medium text-ink">Video Camera Inspection</p>
                     <p className="text-slate-600 text-sm">We use professional cameras to see inside your ductwork</p>
                   </div>
                 </li>
                 <li className="flex gap-4">
-                  <span className="w-8 h-8 rounded-full bg-yellow-500/10 flex items-center justify-center text-yellow-600 flex-shrink-0">✓</span>
+                  <span className="w-8 h-8 rounded-full bg-yellow-500/10 flex items-center justify-center flex-shrink-0">
+                    <svg className="w-4 h-4 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </span>
                   <div>
                     <p className="font-medium text-ink">System Assessment</p>
                     <p className="text-slate-600 text-sm">We evaluate your HVAC system&apos;s overall condition</p>
                   </div>
                 </li>
                 <li className="flex gap-4">
-                  <span className="w-8 h-8 rounded-full bg-yellow-500/10 flex items-center justify-center text-yellow-600 flex-shrink-0">✓</span>
+                  <span className="w-8 h-8 rounded-full bg-yellow-500/10 flex items-center justify-center flex-shrink-0">
+                    <svg className="w-4 h-4 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </span>
                   <div>
                     <p className="font-medium text-ink">Honest Recommendation</p>
                     <p className="text-slate-600 text-sm">We tell you what we found and whether cleaning makes sense</p>
                   </div>
                 </li>
                 <li className="flex gap-4">
-                  <span className="w-8 h-8 rounded-full bg-yellow-500/10 flex items-center justify-center text-yellow-600 flex-shrink-0">✓</span>
+                  <span className="w-8 h-8 rounded-full bg-yellow-500/10 flex items-center justify-center flex-shrink-0">
+                    <svg className="w-4 h-4 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </span>
                   <div>
                     <p className="font-medium text-ink">No Obligation Quote</p>
                     <p className="text-slate-600 text-sm">If cleaning is needed, we provide a clear, upfront price</p>
