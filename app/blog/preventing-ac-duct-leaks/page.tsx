@@ -19,7 +19,7 @@ export default function BlogPost() {
           <h1 className="text-3xl lg:text-5xl font-bold text-white mb-4">
             Tips for Preventing Leaks in Your AC Ducts
           </h1>
-          <time className="text-white/60">January 20, 2024</time>
+          <time className="text-white/60">August 14, 2025</time>
         </div>
       </section>
 

@@ -19,7 +19,7 @@ export default function BlogPost() {
           <h1 className="text-3xl lg:text-5xl font-bold text-white mb-4">
             FAQs About Duct Sealing in Weber County, UT
           </h1>
-          <time className="text-white/60">January 27, 2024</time>
+          <time className="text-white/60">September 11, 2025</time>
         </div>
       </section>
 

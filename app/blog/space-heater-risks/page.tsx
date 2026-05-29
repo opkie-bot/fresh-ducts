@@ -19,7 +19,7 @@ export default function BlogPost() {
           <h1 className="text-3xl lg:text-5xl font-bold text-white mb-4">
             Understanding the Risks of Indoor Space Heaters
           </h1>
-          <time className="text-white/60">March 28, 2024</time>
+          <time className="text-white/60">April 3, 2026</time>
         </div>
       </section>
 

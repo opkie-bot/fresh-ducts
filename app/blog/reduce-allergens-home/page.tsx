@@ -19,7 +19,7 @@ export default function BlogPost() {
           <h1 className="text-3xl lg:text-5xl font-bold text-white mb-4">
             How to Reduce Allergens in Your Home
           </h1>
-          <time className="text-white/60">February 14, 2024</time>
+          <time className="text-white/60">November 20, 2025</time>
         </div>
       </section>
 

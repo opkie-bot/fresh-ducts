@@ -19,7 +19,7 @@ export default function BlogPost() {
           <h1 className="text-3xl lg:text-5xl font-bold text-white mb-4">
             Strategies for Choosing an HVAC Company
           </h1>
-          <time className="text-white/60">March 21, 2024</time>
+          <time className="text-white/60">March 20, 2026</time>
         </div>
       </section>
 

@@ -19,7 +19,7 @@ export default function BlogPost() {
           <h1 className="text-3xl lg:text-5xl font-bold text-white mb-4">
             How Long Does Duct Seal Last and Signs It's Time to Reseal
           </h1>
-          <time className="text-white/60">February 3, 2024</time>
+          <time className="text-white/60">October 9, 2025</time>
         </div>
       </section>
 

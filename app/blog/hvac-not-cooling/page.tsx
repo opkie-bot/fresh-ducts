@@ -19,7 +19,7 @@ export default function BlogPost() {
           <h1 className="text-3xl lg:text-5xl font-bold text-white mb-4">
             Why Isn't Your HVAC Effectively Cooling Your Home?
           </h1>
-          <time className="text-white/60">March 10, 2024</time>
+          <time className="text-white/60">February 19, 2026</time>
         </div>
       </section>
 

@@ -19,7 +19,7 @@ export default function BlogPost() {
           <h1 className="text-3xl lg:text-5xl font-bold text-white mb-4">
             Steps to Improve Air Flow Through Your Vents
           </h1>
-          <time className="text-white/60">February 17, 2024</time>
+          <time className="text-white/60">December 4, 2025</time>
         </div>
       </section>
 

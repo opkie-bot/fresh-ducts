@@ -19,7 +19,7 @@ export default function BlogPost() {
           <h1 className="text-3xl lg:text-5xl font-bold text-white mb-4">
             How to Maintain Your Air Ducts Effectively
           </h1>
-          <time className="text-white/60">February 10, 2024</time>
+          <time className="text-white/60">November 6, 2025</time>
         </div>
       </section>
 

@@ -19,7 +19,7 @@ export default function BlogPost() {
           <h1 className="text-3xl lg:text-5xl font-bold text-white mb-4">
             Silicone vs. Acrylic Duct Sealant: What's the Difference?
           </h1>
-          <time className="text-white/60">February 7, 2024</time>
+          <time className="text-white/60">October 23, 2025</time>
         </div>
       </section>
 
