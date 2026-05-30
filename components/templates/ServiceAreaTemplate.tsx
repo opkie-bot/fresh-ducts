@@ -43,7 +43,6 @@ export function ServiceAreaTemplate({ city, county, mapQuery }: ServiceAreaTempl
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="hidden lg:block"
             >
               <div className="aspect-video bg-navy-800 rounded-xl border border-white/10 overflow-hidden">
                 <iframe
