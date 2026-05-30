@@ -1,9 +1,10 @@
 import { Metadata } from "next";
-import { Button } from "@/components/ui/Button";
+import Image from "next/image";
+import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Referral Program | Fresh Ducts",
-  description: "Earn rewards by referring friends and family to Fresh Ducts. Get $25 for each successful referral.",
+  title: "Affiliate Program | Fresh Ducts",
+  description: "Become an affiliate partner with Fresh Ducts and earn cash for every referral. Join our affiliate program today.",
 };
 
 export default function ReferralProgramPage() {
@@ -13,12 +14,12 @@ export default function ReferralProgramPage() {
       <section className="bg-navy-900 py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl">
-            <p className="text-yellow-500 font-medium mb-3">Referral Program</p>
+            <p className="text-yellow-500 font-medium mb-3">Affiliate Program</p>
             <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-              Earn $25 for Every Referral
+              Start Earning Cash for Referrals
             </h1>
             <p className="text-white/70 text-lg">
-              Know someone who needs their ducts cleaned? Refer them to Fresh Ducts and earn $25 when they complete a service.
+              Partner with Fresh Ducts and earn money for every successful referral. It&apos;s easy to get started.
             </p>
           </div>
         </div>
@@ -30,7 +31,7 @@ export default function ReferralProgramPage() {
           <div className="text-center max-w-2xl mx-auto mb-16">
             <p className="text-yellow-600 font-medium mb-3">How It Works</p>
             <h2 className="font-display text-3xl font-semibold text-ink">
-              Three Simple Steps
+              It&apos;s as Easy as 1, 2, 3...
             </h2>
           </div>
 
@@ -39,134 +40,134 @@ export default function ReferralProgramPage() {
               <div className="w-16 h-16 bg-navy-900 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <span className="text-yellow-500 text-2xl font-bold">1</span>
               </div>
-              <h3 className="font-semibold text-ink text-lg mb-2">Refer a Friend</h3>
+              <h3 className="font-semibold text-ink text-lg mb-2">Sign Up</h3>
               <p className="text-slate-600">
-                Tell your friends, family, or neighbors about Fresh Ducts. Give them your name so they can mention you when they call.
+                Fill out the affiliate sign-up form below to join our partner program.
               </p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-navy-900 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <span className="text-yellow-500 text-2xl font-bold">2</span>
               </div>
-              <h3 className="font-semibold text-ink text-lg mb-2">They Get Service</h3>
+              <h3 className="font-semibold text-ink text-lg mb-2">Send Referrals</h3>
               <p className="text-slate-600">
-                When your referral schedules and completes a duct cleaning service, they mention your name.
+                Share Fresh Ducts with your network. When they book a service, you earn cash.
               </p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-navy-900 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <span className="text-yellow-500 text-2xl font-bold">3</span>
               </div>
-              <h3 className="font-semibold text-ink text-lg mb-2">You Get Paid</h3>
+              <h3 className="font-semibold text-ink text-lg mb-2">Get Paid</h3>
               <p className="text-slate-600">
-                We&apos;ll send you a $25 gift card as a thank you for spreading the word about Fresh Ducts.
+                Receive your referral payment after the service is completed. It&apos;s that simple!
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Referral Form */}
+      {/* The Fresh Duct Difference */}
+      <section className="py-24 lg:py-32 bg-navy-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <p className="text-yellow-500 font-medium mb-3">Why Partner With Us</p>
+              <h2 className="text-3xl lg:text-4xl font-bold text-white mb-8">
+                The Fresh Duct Difference
+              </h2>
+              <ul className="space-y-4">
+                <li className="flex gap-4">
+                  <span className="w-8 h-8 rounded-full bg-yellow-500/20 flex items-center justify-center flex-shrink-0">
+                    <svg className="w-4 h-4 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </span>
+                  <p className="text-white/80">Trusted by Northern Utah families since 1993</p>
+                </li>
+                <li className="flex gap-4">
+                  <span className="w-8 h-8 rounded-full bg-yellow-500/20 flex items-center justify-center flex-shrink-0">
+                    <svg className="w-4 h-4 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </span>
+                  <p className="text-white/80">4.9 star rating with over 300 Google reviews</p>
+                </li>
+                <li className="flex gap-4">
+                  <span className="w-8 h-8 rounded-full bg-yellow-500/20 flex items-center justify-center flex-shrink-0">
+                    <svg className="w-4 h-4 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </span>
+                  <p className="text-white/80">BBB Accredited with A+ Rating</p>
+                </li>
+                <li className="flex gap-4">
+                  <span className="w-8 h-8 rounded-full bg-yellow-500/20 flex items-center justify-center flex-shrink-0">
+                    <svg className="w-4 h-4 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </span>
+                  <p className="text-white/80">Free video inspections - we show before we clean</p>
+                </li>
+                <li className="flex gap-4">
+                  <span className="w-8 h-8 rounded-full bg-yellow-500/20 flex items-center justify-center flex-shrink-0">
+                    <svg className="w-4 h-4 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </span>
+                  <p className="text-white/80">Professional, uniformed technicians</p>
+                </li>
+                <li className="flex gap-4">
+                  <span className="w-8 h-8 rounded-full bg-yellow-500/20 flex items-center justify-center flex-shrink-0">
+                    <svg className="w-4 h-4 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </span>
+                  <p className="text-white/80">High conversion rates for your referrals</p>
+                </li>
+              </ul>
+            </div>
+            <div className="flex justify-center">
+              <div className="relative w-64 h-64">
+                <Image
+                  src="/logo.svg"
+                  alt="Fresh Ducts Logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Affiliate Sign-Up Form */}
       <section className="py-24 lg:py-32 bg-surface">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-display text-3xl font-semibold text-ink mb-4">
-              Submit a Referral
+              Become An Affiliate Partner!
             </h2>
             <p className="text-slate-600">
-              Fill out this form and we&apos;ll reach out to your referral directly.
+              Fill out the form below to join our affiliate program and start earning.
             </p>
           </div>
 
           <div className="bg-white rounded-xl p-8">
-            <form className="space-y-6">
-              <div className="border-b border-slate-200 pb-6 mb-6">
-                <h3 className="font-semibold text-ink mb-4">Your Information</h3>
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <div>
-                    <label htmlFor="yourName" className="block text-sm font-medium text-ink mb-2">
-                      Your Name
-                    </label>
-                    <input
-                      type="text"
-                      id="yourName"
-                      name="yourName"
-                      className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent outline-none transition-shadow"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="yourEmail" className="block text-sm font-medium text-ink mb-2">
-                      Your Email
-                    </label>
-                    <input
-                      type="email"
-                      id="yourEmail"
-                      name="yourEmail"
-                      className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent outline-none transition-shadow"
-                      required
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <h3 className="font-semibold text-ink mb-4">Referral Information</h3>
-                <div className="space-y-4">
-                  <div className="grid sm:grid-cols-2 gap-4">
-                    <div>
-                      <label htmlFor="referralName" className="block text-sm font-medium text-ink mb-2">
-                        Referral&apos;s Name
-                      </label>
-                      <input
-                        type="text"
-                        id="referralName"
-                        name="referralName"
-                        className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent outline-none transition-shadow"
-                        required
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="referralPhone" className="block text-sm font-medium text-ink mb-2">
-                        Referral&apos;s Phone
-                      </label>
-                      <input
-                        type="tel"
-                        id="referralPhone"
-                        name="referralPhone"
-                        className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent outline-none transition-shadow"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <label htmlFor="referralEmail" className="block text-sm font-medium text-ink mb-2">
-                      Referral&apos;s Email (optional)
-                    </label>
-                    <input
-                      type="email"
-                      id="referralEmail"
-                      name="referralEmail"
-                      className="w-full px-4 py-3 border border-slate-200 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent outline-none transition-shadow"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <button
-                type="submit"
-                className="w-full px-6 py-3 bg-yellow-500 text-navy-900 font-medium rounded-lg hover:bg-yellow-400 transition-colors"
-              >
-                Submit Referral
-              </button>
-            </form>
+            <iframe
+              src="https://link.opkie.com/widget/form/jQQsyM6vZDdZ5FhQh8mo"
+              style={{ width: "100%", height: "569px", border: "none", borderRadius: "3px" }}
+              id="inline-jQQsyM6vZDdZ5FhQh8mo"
+              data-layout="{'id':'INLINE'}"
+              data-form-name="Affiliate Sign-Up Form"
+              data-height="569"
+              title="Affiliate Sign-Up Form"
+            />
           </div>
-
-          <p className="text-center text-sm text-slate-500 mt-6">
-            Terms: Referral reward is paid after the referred customer completes a paid service of $200 or more. Limit of 10 referral rewards per person per year.
-          </p>
         </div>
       </section>
+
+      <Script src="https://link.opkie.com/js/form_embed.js" strategy="lazyOnload" />
     </main>
   );
 }
