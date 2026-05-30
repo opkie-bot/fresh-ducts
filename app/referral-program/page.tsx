@@ -15,7 +15,7 @@ export default function ReferralProgramPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <p className="text-yellow-500 font-medium mb-3">Affiliate Program</p>
-            <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+            <h1 className="text-4xl lg:text-5xl font-extrabold text-white mb-6">
               Start Earning Cash for Referrals
             </h1>
             <p className="text-white/70 text-lg">
