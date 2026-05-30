@@ -32,7 +32,7 @@ const features = [
 
 export function WhyChooseUs() {
   return (
-    <section className="py-24 lg:py-32 bg-surface">
+    <section className="pt-24 lg:pt-32 pb-12 lg:pb-16 bg-surface">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
           {/* Image side */}
