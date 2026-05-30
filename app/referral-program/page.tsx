@@ -153,15 +153,13 @@ export default function ReferralProgramPage() {
                 </li>
               </ul>
             </div>
-            <div className="flex justify-center">
-              <div className="relative w-64 h-64">
-                <Image
-                  src="/logo.webp"
-                  alt="Fresh Ducts Logo"
-                  fill
-                  className="object-contain"
-                />
-              </div>
+            <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-white/10">
+              <Image
+                src="/company-trucks.jpg"
+                alt="Fresh Ducts company van"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </div>
