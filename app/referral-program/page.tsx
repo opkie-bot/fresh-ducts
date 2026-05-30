@@ -10,56 +10,44 @@ export const metadata: Metadata = {
 export default function ReferralProgramPage() {
   return (
     <main className="pt-16">
-      {/* Hero */}
+      {/* Hero with How it works */}
       <section className="bg-navy-900 py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-2xl">
+          <div className="text-center max-w-3xl mx-auto mb-16">
             <p className="text-yellow-500 font-medium mb-3">Affiliate Program</p>
             <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
               Start Earning Cash for Referrals
             </h1>
             <p className="text-white/70 text-lg">
-              Partner with Fresh Ducts and earn money for every successful referral. It&apos;s easy to get started.
+              Partner with Fresh Ducts and earn money for every successful referral. It&apos;s as easy as 1, 2, 3...
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* How it works */}
-      <section className="py-16 lg:py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <p className="text-yellow-600 font-medium mb-3">How It Works</p>
-            <h2 className="font-display text-3xl font-semibold text-ink">
-              It&apos;s as Easy as 1, 2, 3...
-            </h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-navy-900 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <span className="text-yellow-500 text-2xl font-bold">1</span>
               </div>
-              <h3 className="font-semibold text-ink text-lg mb-2">Sign Up</h3>
-              <p className="text-slate-600">
+              <h3 className="font-semibold text-white text-lg mb-2">Sign Up</h3>
+              <p className="text-white/60">
                 Fill out the affiliate sign-up form below to join our partner program.
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-navy-900 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <span className="text-yellow-500 text-2xl font-bold">2</span>
               </div>
-              <h3 className="font-semibold text-ink text-lg mb-2">Send Referrals</h3>
-              <p className="text-slate-600">
+              <h3 className="font-semibold text-white text-lg mb-2">Send Referrals</h3>
+              <p className="text-white/60">
                 Share Fresh Ducts with your network. When they book a service, you earn cash.
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-navy-900 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <span className="text-yellow-500 text-2xl font-bold">3</span>
               </div>
-              <h3 className="font-semibold text-ink text-lg mb-2">Get Paid</h3>
-              <p className="text-slate-600">
+              <h3 className="font-semibold text-white text-lg mb-2">Get Paid</h3>
+              <p className="text-white/60">
                 Receive your referral payment after the service is completed. It&apos;s that simple!
               </p>
             </div>
