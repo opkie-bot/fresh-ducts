@@ -67,6 +67,32 @@ export default function ReferralProgramPage() {
         </div>
       </section>
 
+      {/* Affiliate Sign-Up Form */}
+      <section className="py-24 lg:py-32 bg-surface">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="font-display text-3xl font-semibold text-ink mb-4">
+              Become An Affiliate Partner!
+            </h2>
+            <p className="text-slate-600">
+              Fill out the form below to join our affiliate program and start earning.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-xl p-8">
+            <iframe
+              src="https://link.opkie.com/widget/form/jQQsyM6vZDdZ5FhQh8mo"
+              style={{ width: "100%", height: "569px", border: "none", borderRadius: "3px" }}
+              id="inline-jQQsyM6vZDdZ5FhQh8mo"
+              data-layout="{'id':'INLINE'}"
+              data-form-name="Affiliate Sign-Up Form"
+              data-height="569"
+              title="Affiliate Sign-Up Form"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* The Fresh Duct Difference */}
       <section className="py-24 lg:py-32 bg-navy-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -137,32 +163,6 @@ export default function ReferralProgramPage() {
                 />
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Affiliate Sign-Up Form */}
-      <section className="py-24 lg:py-32 bg-surface">
-        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="font-display text-3xl font-semibold text-ink mb-4">
-              Become An Affiliate Partner!
-            </h2>
-            <p className="text-slate-600">
-              Fill out the form below to join our affiliate program and start earning.
-            </p>
-          </div>
-
-          <div className="bg-white rounded-xl p-8">
-            <iframe
-              src="https://link.opkie.com/widget/form/jQQsyM6vZDdZ5FhQh8mo"
-              style={{ width: "100%", height: "569px", border: "none", borderRadius: "3px" }}
-              id="inline-jQQsyM6vZDdZ5FhQh8mo"
-              data-layout="{'id':'INLINE'}"
-              data-form-name="Affiliate Sign-Up Form"
-              data-height="569"
-              title="Affiliate Sign-Up Form"
-            />
           </div>
         </div>
       </section>
